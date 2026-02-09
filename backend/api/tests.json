@@ -1,0 +1,28 @@
+{
+  "tests": [
+    {
+      "name": "Get blog posts",
+      "method": "GET",
+      "path": "/?action=posts",
+      "expectedStatus": 200
+    },
+    {
+      "name": "Get site settings",
+      "method": "GET",
+      "path": "/?action=settings",
+      "expectedStatus": 200
+    },
+    {
+      "name": "Submit contact form",
+      "method": "POST",
+      "path": "/?action=contact",
+      "body": {
+        "name": "Test User",
+        "contact": "test@example.com",
+        "subject": "Test",
+        "message": "Test message"
+      },
+      "expectedStatus": 200
+    }
+  ]
+}
